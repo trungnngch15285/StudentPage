@@ -1,0 +1,87 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>header and footer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container-fluid page-header">
+            <img class="img-responsive img-fluid mx-auto d-block" src="img/UniversityArticleSubmit_logo.png"/>
+        </div>
+    </header>
+    <!--Navigation bar-->
+    <!--Navigation bar change to vertical form if screen is small
+        Stick on top if scroll down-->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark sticky-top">
+        <!--Homepage button-->
+        <a class="navbar-brand" href="#">Home</a>
+        <!--Collapse button-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#links">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--collapse when screen size is small-->
+        <div class="collapse navbar-collapse" id="links">
+            <!--user features-->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Upload Contribution</a>
+                </li>
+                <!--Drop down (if needed)-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Feature 2</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                    </div>
+                </li>
+            </ul>
+            <!--Log-out-->
+            <ul class="navbar-nav ml">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--End of Navigation-->
+
+    <div class="container">
+        <h2>Contribution submitted</h2>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Contribution</th>
+                    <th>Topic</th>
+                    <th>Comment</th>
+                    <th></th>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>id</td>
+                    <td>contribution</td>
+                    <td>topic</td>
+                    <td><button>View comment</button></td>
+                    <td><button>ReUpload</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <footer>
+            <div class="text-center col-md-12 col-lg-12 col-sm-12">
+                <p>&copy; Enterprise Application Development Project</p>
+            </div>
+        </footer>
+
+    </div> <!-- /container -->        
+</body>
+</html>
